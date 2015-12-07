@@ -3,10 +3,10 @@
   (general
     (links 762)
     (no_connects 336)
-    (area 106.564302 45.604302 304.915698 243.955698)
+    (area -53.368333 -50.567001 382.370001 294.32819)
     (thickness 1.6)
     (drawings 6)
-    (tracks 4)
+    (tracks 7)
     (zones 0)
     (modules 294)
     (nets 305)
@@ -708,6 +708,24 @@
     (add_net "Net-(U7-Pad7)")
     (add_net "Net-(U8-Pad7)")
     (add_net "Net-(U9-Pad7)")
+  )
+
+  (net_class c1 ""
+    (clearance 0.2)
+    (trace_width 0.5)
+    (via_dia 0.6)
+    (via_drill 0.4)
+    (uvia_dia 0.3)
+    (uvia_drill 0.1)
+  )
+
+  (net_class l1 ""
+    (clearance 0.2)
+    (trace_width 2.54)
+    (via_dia 0.6)
+    (via_drill 0.4)
+    (uvia_dia 0.3)
+    (uvia_drill 0.1)
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 5666036D)
@@ -8786,7 +8804,10 @@
 
   (segment (start 255.26746 34.80054) (end 255.26746 28.10746) (width 0.25) (layer F.Cu) (net 264))
   (segment (start 255.26746 28.10746) (end 255.1 27.94) (width 0.25) (layer F.Cu) (net 264) (tstamp 5666183F))
-  (segment (start 238.75746 27.18054) (end 252.14054 27.18054) (width 0.25) (layer F.Cu) (net 265))
-  (segment (start 252.14054 27.18054) (end 252.9 27.94) (width 0.25) (layer F.Cu) (net 265) (tstamp 56661839))
+  (segment (start 240.03 31.75) (end 238.76 27.18308) (width 0.25) (layer F.Cu) (net 265))
+  (segment (start 238.76 27.18308) (end 238.75746 27.18054) (width 0.25) (layer F.Cu) (net 265) (tstamp 56663158))
+  (segment (start 240.02746 31.75) (end 240.03 31.75) (width 0.25) (layer F.Cu) (net 265))
+  (segment (start 240.03 31.75) (end 253.41054 31.75) (width 0.25) (layer F.Cu) (net 265) (tstamp 56663156))
+  (segment (start 253.41054 31.75) (end 252.9 27.94) (width 0.25) (layer F.Cu) (net 265) (tstamp 56661839))
 
 )
