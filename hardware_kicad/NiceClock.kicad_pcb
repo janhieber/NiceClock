@@ -2,11 +2,11 @@
 
   (general
     (links 762)
-    (no_connects 336)
-    (area -53.368333 -50.567001 382.370001 294.32819)
+    (no_connects 335)
+    (area -53.368333 -50.567001 382.370001 343.308878)
     (thickness 1.6)
     (drawings 8)
-    (tracks 15)
+    (tracks 20)
     (zones 0)
     (modules 294)
     (nets 305)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 2.54)
+    (last_trace_width 0.5)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
     (zone_45_only no)
@@ -399,7 +399,7 @@
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
-    (trace_width 2.54)
+    (trace_width 0.5)
     (via_dia 0.6)
     (via_drill 0.4)
     (uvia_dia 0.3)
@@ -7884,7 +7884,7 @@
   )
 
   (module custom_janh:SOP8 (layer F.Cu) (tedit 5665DF06) (tstamp 56660E8F)
-    (at 104.14 195.58)
+    (at 91.44 173.99)
     (path /5674AB8C)
     (fp_text reference U15 (at -0.254 -1.016) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
@@ -8565,7 +8565,7 @@
   )
 
   (module custom_janh:SOP8 (layer F.Cu) (tedit 5665DF06) (tstamp 56661000)
-    (at 74.93 196.85)
+    (at 67.31 173.99)
     (path /567630B5)
     (fp_text reference U35 (at -0.254 -1.016) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
@@ -8812,6 +8812,11 @@
   (segment (start 205.74 50.8) (end 205.74 81.28) (width 2.54) (layer F.Cu) (net 0) (tstamp 5665F541))
   (segment (start 220.98 120.65) (end 220.98 113.03) (width 0.25) (layer F.Cu) (net 0))
   (segment (start 220.98 113.03) (end 233.68 100.33) (width 0.25) (layer F.Cu) (net 0) (tstamp 5665F4C4))
+  (segment (start 71.11746 182.36946) (end 78.22946 182.36946) (width 0.5) (layer F.Cu) (net 1) (status 400000))
+  (segment (start 95.24746 186.69254) (end 95.24746 182.36946) (width 0.5) (layer F.Cu) (net 1) (tstamp 56660BE0) (status 800000))
+  (segment (start 92.71 189.23) (end 95.24746 186.69254) (width 0.5) (layer F.Cu) (net 1) (tstamp 56660BDE))
+  (segment (start 85.09 189.23) (end 92.71 189.23) (width 0.5) (layer F.Cu) (net 1) (tstamp 56660BDC))
+  (segment (start 78.22946 182.36946) (end 85.09 189.23) (width 0.5) (layer F.Cu) (net 1) (tstamp 56660BDA))
   (segment (start 255.26746 34.80054) (end 255.26746 28.10746) (width 0.25) (layer F.Cu) (net 264))
   (segment (start 255.26746 28.10746) (end 255.1 27.94) (width 0.25) (layer F.Cu) (net 264) (tstamp 5666183F))
   (segment (start 240.03 31.75) (end 238.76 27.18308) (width 0.25) (layer F.Cu) (net 265))
