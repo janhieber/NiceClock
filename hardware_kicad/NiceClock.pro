@@ -1,4 +1,4 @@
-update=Fr 25 Dez 2015 11:20:59 CET
+update=Sa 26 Dez 2015 00:55:32 CET
 version=1
 last_client=kicad
 [cvpcb]
@@ -61,3 +61,13 @@ LibName29=valves
 LibName30=sym/WS2803
 LibName31=sym/stm32f101c8
 LibName32=sym/ws2811
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
