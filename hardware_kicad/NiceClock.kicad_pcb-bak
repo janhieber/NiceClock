@@ -3,9 +3,9 @@
   (general
     (links 590)
     (no_connects 350)
-    (area 27.98 21.735 400.43923 274.28)
+    (area -65.48796 21.489999 400.43923 274.28)
     (thickness 1.6)
-    (drawings 2)
+    (drawings 4)
     (tracks 0)
     (zones 0)
     (modules 168)
@@ -62,7 +62,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 30.48 271.78)
-    (grid_origin 82.804 151.638)
+    (grid_origin 156.21 147.32)
     (visible_elements FFFFF77F)
     (pcbplotparams
       (layerselection 0x00030_80000001)
@@ -572,7 +572,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D476E)
-    (at 189.738 80.518)
+    (at 181.102 84.328)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /56828EBE)
@@ -601,7 +601,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D4774)
-    (at 223.774 138.684)
+    (at 234.188 144.018)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /56828EAC)
@@ -630,7 +630,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D477A)
-    (at 199.898 202.438)
+    (at 191.516 197.104)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /567E41BD)
@@ -659,7 +659,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D4780)
-    (at 132.334 219.456)
+    (at 370.84 49.53)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /567E43CE)
@@ -688,7 +688,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D4786)
-    (at 94.234 177.038)
+    (at 103.378 179.578)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /567E45DE)
@@ -717,7 +717,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D478C)
-    (at 96.52 115.316)
+    (at 87.63 123.952)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /567E47ED)
@@ -746,7 +746,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D4792)
-    (at 132.334 72.644)
+    (at 139.446 76.962)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /567E49FF)
@@ -775,7 +775,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D4798)
-    (at 130.81 178.562)
+    (at 361.751869 212.129083)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /56792C7E)
@@ -804,7 +804,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D479E)
-    (at 135.636 178.816)
+    (at 339.361869 238.229083)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /56773E37)
@@ -833,7 +833,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D47A4)
-    (at 140.716 178.816)
+    (at 379.391869 194.729083)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /56793039)
@@ -862,7 +862,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D47AA)
-    (at 133.604 184.912)
+    (at 370.651869 206.229083)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /567B66B3)
@@ -891,7 +891,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D47B0)
-    (at 135.382 151.384)
+    (at 340.320918 43.469083)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /567764D8)
@@ -920,7 +920,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D47B6)
-    (at 129.794 152.146)
+    (at 396.110918 180.129083)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /567768EF)
@@ -949,7 +949,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D47BC)
-    (at 190.754 170.688)
+    (at 352.781869 223.629083)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /56797A79)
@@ -978,7 +978,7 @@
   )
 
   (module Capacitors_Tantalum_SMD:TantalC_SizeC_EIA-6032_Wave (layer F.Cu) (tedit 0) (tstamp 567D47C2)
-    (at 182.88 168.148)
+    (at 396.24 54.61)
     (descr "Tantal Cap. , Size C, EIA-6032, Wave,")
     (tags "Tantal Cap. , Size C, EIA-6032, Wave,")
     (path /5678FC89)
@@ -1009,7 +1009,7 @@
   )
 
   (module Capacitors_SMD:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 567D47C8)
-    (at 138.684 184.658)
+    (at 343.811869 232.329083)
     (descr "Capacitor SMD 0603, hand soldering")
     (tags "capacitor 0603")
     (path /567934ED)
@@ -4132,7 +4132,7 @@
   )
 
   (module custom_janh:Pin_Header_SMD_Angled_1x02 (layer F.Cu) (tedit 567D3CC1) (tstamp 567D4BBE)
-    (at 148.59 131.826)
+    (at 375.92 124.46)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /567D99D3)
@@ -4183,7 +4183,7 @@
   )
 
   (module custom_janh:Pin_Header_SMD_Angled_1x02 (layer F.Cu) (tedit 567D3CC1) (tstamp 567D4BC4)
-    (at 148.082 125.222)
+    (at 358.14 124.46)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /567D9FD2)
@@ -4234,7 +4234,7 @@
   )
 
   (module custom_janh:Pin_Header_SMD_Angled_1x04 (layer F.Cu) (tedit 567D3E0B) (tstamp 567D4BD0)
-    (at 148.59 112.776)
+    (at 339.09 120.65)
     (descr "SMD pin header")
     (tags "pin header")
     (path /567B87A0)
@@ -4310,7 +4310,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4BD6)
-    (at 189.738 87.122)
+    (at 361.820918 206.229083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5675B200)
@@ -4339,7 +4339,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4BDC)
-    (at 223.266 133.858)
+    (at 339.430918 232.329083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /567F66AA)
@@ -4368,7 +4368,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4BE2)
-    (at 200.914 208.026)
+    (at 357.370918 212.129083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /567F6F91)
@@ -4397,7 +4397,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4BE8)
-    (at 132.08 214.63)
+    (at 348.400918 223.629083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /567FA678)
@@ -4426,7 +4426,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4BEE)
-    (at 212.598 107.188)
+    (at 391.810918 180.129083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5675BDD1)
@@ -4455,7 +4455,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4BF4)
-    (at 224.028 171.45)
+    (at 382.980918 188.829083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /567F64E9)
@@ -4484,7 +4484,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4BFA)
-    (at 167.894 219.964)
+    (at 366.270918 206.229083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /567F752D)
@@ -4513,7 +4513,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C00)
-    (at 93.98 181.356)
+    (at 330.460918 241.319083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /56800434)
@@ -4542,7 +4542,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C06)
-    (at 96.266 120.396)
+    (at 362.620918 36.519083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /56800C49)
@@ -4571,7 +4571,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C0C)
-    (at 132.08 68.834)
+    (at 375.150918 203.429083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /568BBE15)
@@ -4600,7 +4600,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C12)
-    (at 90.932 153.162)
+    (at 366.130918 212.129083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /568014AB)
@@ -4629,7 +4629,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C18)
-    (at 106.172 91.186)
+    (at 391.810918 186.029083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /568BBE23)
@@ -4658,7 +4658,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C1E)
-    (at 113.792 198.628)
+    (at 348.400918 229.529083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /567FE3BC)
@@ -4687,7 +4687,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C24)
-    (at 149.86 60.452)
+    (at 357.370918 218.029083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /568BBE32)
@@ -4716,7 +4716,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C2A)
-    (at 149.86 65.278)
+    (at 334.910918 241.319083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /568BBE2C)
@@ -4745,7 +4745,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C30)
-    (at 141.986 132.842)
+    (at 344.620918 43.469083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /567B4E2B)
@@ -4774,7 +4774,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C36)
-    (at 191.262 165.1)
+    (at 367.03 143.51)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5678A065)
@@ -4803,7 +4803,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C3C)
-    (at 141.986 126.746)
+    (at 357.370918 206.229083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /567DC874)
@@ -4832,7 +4832,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5418A00F) (tstamp 567D4C42)
-    (at 192.786 159.004)
+    (at 378.530918 188.829083)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5678A783)
@@ -4861,7 +4861,7 @@
   )
 
   (module Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm (layer F.Cu) (tedit 54130A77) (tstamp 567D4C73)
-    (at 189.738 85.344)
+    (at 189.23 69.85)
     (descr "28-Lead Plastic Small Outline (SO) - Wide, 7.50 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
     (path /56752B9B)
@@ -4947,7 +4947,7 @@
   )
 
   (module Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm (layer F.Cu) (tedit 54130A77) (tstamp 567D4C9E)
-    (at 224.028 137.922)
+    (at 228.6 158.75)
     (descr "28-Lead Plastic Small Outline (SO) - Wide, 7.50 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
     (path /56755CC8)
@@ -5033,7 +5033,7 @@
   )
 
   (module Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm (layer F.Cu) (tedit 54130A77) (tstamp 567D4CC9)
-    (at 200.66 207.518)
+    (at 186.69 210.82)
     (descr "28-Lead Plastic Small Outline (SO) - Wide, 7.50 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
     (path /56756D5F)
@@ -5119,7 +5119,7 @@
   )
 
   (module Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm (layer F.Cu) (tedit 54130A77) (tstamp 567D4CF4)
-    (at 131.826 215.138)
+    (at 125.73 222.25)
     (descr "28-Lead Plastic Small Outline (SO) - Wide, 7.50 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
     (path /56757B80)
@@ -5205,7 +5205,7 @@
   )
 
   (module Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm (layer F.Cu) (tedit 54130A77) (tstamp 567D4D1F)
-    (at 93.726 180.086)
+    (at 90.17 177.8)
     (descr "28-Lead Plastic Small Outline (SO) - Wide, 7.50 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
     (path /56758C49)
@@ -5291,7 +5291,7 @@
   )
 
   (module Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm (layer F.Cu) (tedit 54130A77) (tstamp 567D4D4A)
-    (at 96.774 119.634)
+    (at 78.74 113.03)
     (descr "28-Lead Plastic Small Outline (SO) - Wide, 7.50 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
     (path /56758D4C)
@@ -5377,7 +5377,7 @@
   )
 
   (module Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm (layer F.Cu) (tedit 54130A77) (tstamp 567D4D75)
-    (at 132.08 72.136)
+    (at 129.54 67.31)
     (descr "28-Lead Plastic Small Outline (SO) - Wide, 7.50 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
     (path /568BBDA0)
@@ -5463,7 +5463,7 @@
   )
 
   (module Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm (layer F.Cu) (tedit 54130A77) (tstamp 567D4DA9)
-    (at 135.636 168.656)
+    (at 168.91 170.18)
     (descr "48 LEAD LQFP 7x7mm (see MICREL LQFP7x7-48LD-PL-1.pdf)")
     (tags "QFP 0.5")
     (path /566A4175)
@@ -5591,7 +5591,7 @@
   )
 
   (module TO_SOT_Packages_SMD:SOT-223 (layer F.Cu) (tedit 0) (tstamp 567D4DB1)
-    (at 183.642 158.75)
+    (at 382.27 48.26)
     (descr "module CMS SOT223 4 pins")
     (tags "CMS SOT")
     (path /5678703A)
@@ -5625,7 +5625,7 @@
   )
 
   (module Crystals:Crystal_HC49-SD_SMD (layer F.Cu) (tedit 0) (tstamp 567D4DB7)
-    (at 136.144 157.734)
+    (at 339.09 27.94)
     (descr "Crystal, Quarz, HC49-SD, SMD,")
     (tags "Crystal, Quarz, HC49-SD, SMD,")
     (path /56775F61)
@@ -5651,6 +5651,8 @@
       (net 4 /OSC_OUT))
   )
 
+  (gr_circle (center 156.21 147.32) (end 229.616 82.042) (layer Dwgs.User) (width 0.2))
+  (gr_circle (center 156.21 147.32) (end 254.254 90.17) (layer Dwgs.User) (width 0.2))
   (target plus (at 30.48 271.78) (size 5) (width 0.2) (layer Edge.Cuts))
   (gr_circle (center 156.21 147.32) (end 31.75 149.86) (layer Edge.Cuts) (width 0.2))
 
