@@ -1,4 +1,4 @@
-update=Sa 26 Dez 2015 00:55:32 CET
+update=So 27 Dez 2015 00:03:34 CET
 version=1
 last_client=kicad
 [cvpcb]
@@ -25,9 +25,19 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=
+LibDir=sym
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,16 +68,7 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=sym/WS2803
+LibName30=sym/MCP7940M
 LibName31=sym/stm32f101c8
 LibName32=sym/ws2811
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName33=sym/WS2803
