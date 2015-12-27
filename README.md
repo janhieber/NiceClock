@@ -1,18 +1,19 @@
-This is for testing the new KiCad v4.
+This project was started for testing the new KiCad v4
+as a replacement for EAGLE.
 
-I startet a design with KiCad, learned how it works.  
-KiCad has some nice features and works really great.  
-But on the other side it has some limitations or things not implemented yet.
+I want a free ECAD software without the limiations, so
+I started this to explore the capabilities of KiCad.
 
-What holds me from finishing this in KiCad is the
-drawing of the bars between 5 minutes.
+Conclusion: KiCad can be a good replacement for EAGLE and co.  
+It has some rough edges, but therefore makes a point with other
+great features.
 
-In KiCad the only chance is to draw a track with rounded edges and diffucult
-align it with an 30° angle, with some helper lines etc... really ugly to do.
+![PCB 3D](https://cdn.rawgit.com/janhieber/NiceClock/master/doc/PCB_3D.jpg)
 
-In Eagle it's a bit better, because i can draw a rectangle, turn it to 30° or 60°.
-Now also with some helper lines and circles (which are much easier to handle in Eagle that KiCad)
-i can align the rectangles with a small grid.
-I can also copy them to remove solder mask at that position.
+For the current progress, look at the
+[schematic](https://raw.githubusercontent.com/janhieber/NiceClock/master/hardware/doc/schematic.pdf)
+and
+[layout](https://raw.githubusercontent.com/janhieber/NiceClock/master/hardware/doc/board.pdf) PDFs.
 
-In KiCad selecting stuff is messy and moving things around is ugly.
+If you are interessted in this, feel free to contact me.  
+I'll also have some spare PCBs when i ordner them, so I'll sell them.
