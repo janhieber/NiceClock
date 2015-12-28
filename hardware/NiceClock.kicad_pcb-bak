@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.1-stable)
 
   (general
-    (links 609)
-    (no_connects 206)
-    (area 24.13 17.78 284.353001 274.828001)
+    (links 640)
+    (no_connects 233)
+    (area 31.624083 22.734083 280.795917 271.905917)
     (thickness 1.6)
-    (drawings 2)
-    (tracks 226)
+    (drawings 8)
+    (tracks 241)
     (zones 0)
-    (modules 176)
+    (modules 184)
     (nets 221)
   )
 
@@ -286,32 +286,32 @@
   (net 192 "Net-(U8-Pad21)")
   (net 193 "Net-(U8-Pad22)")
   (net 194 "Net-(U8-Pad25)")
-  (net 195 "Net-(U8-Pad26)")
-  (net 196 "Net-(U8-Pad27)")
-  (net 197 "Net-(U8-Pad28)")
-  (net 198 "Net-(U8-Pad29)")
-  (net 199 /USART1_TX)
-  (net 200 /USART1_RX)
-  (net 201 "Net-(U8-Pad32)")
-  (net 202 "Net-(U8-Pad33)")
-  (net 203 "Net-(U8-Pad38)")
-  (net 204 "Net-(U8-Pad39)")
-  (net 205 "Net-(U8-Pad40)")
-  (net 206 "Net-(U8-Pad45)")
-  (net 207 "Net-(U8-Pad46)")
-  (net 208 "Net-(U7-Pad18)")
-  (net 209 "Net-(U7-Pad19)")
-  (net 210 "Net-(U7-Pad20)")
-  (net 211 "Net-(U7-Pad21)")
-  (net 212 "Net-(U7-Pad22)")
-  (net 213 "Net-(U7-Pad23)")
-  (net 214 "Net-(C16-Pad1)")
-  (net 215 "Net-(C17-Pad1)")
-  (net 216 "Net-(C18-Pad1)")
-  (net 217 /RTC_MFP)
-  (net 218 /RTC_SCL)
-  (net 219 /RTC_SDA)
-  (net 220 "Net-(U10-Pad3)")
+  (net 195 "Net-(U8-Pad29)")
+  (net 196 /USART1_TX)
+  (net 197 /USART1_RX)
+  (net 198 "Net-(U8-Pad32)")
+  (net 199 "Net-(U8-Pad33)")
+  (net 200 "Net-(U8-Pad38)")
+  (net 201 "Net-(U8-Pad39)")
+  (net 202 "Net-(U8-Pad40)")
+  (net 203 "Net-(U8-Pad45)")
+  (net 204 "Net-(U8-Pad46)")
+  (net 205 "Net-(U7-Pad18)")
+  (net 206 "Net-(U7-Pad19)")
+  (net 207 "Net-(U7-Pad20)")
+  (net 208 "Net-(U7-Pad21)")
+  (net 209 "Net-(U7-Pad22)")
+  (net 210 "Net-(U7-Pad23)")
+  (net 211 "Net-(C16-Pad1)")
+  (net 212 "Net-(C17-Pad1)")
+  (net 213 "Net-(C18-Pad1)")
+  (net 214 /RTC_MFP)
+  (net 215 /RTC_SCL)
+  (net 216 /RTC_SDA)
+  (net 217 "Net-(U10-Pad3)")
+  (net 218 /SW_MODE)
+  (net 219 /SW_H)
+  (net 220 /SW_M)
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -332,6 +332,9 @@
     (add_net /RTC_SDA)
     (add_net /SWCLK)
     (add_net /SWDIO)
+    (add_net /SW_H)
+    (add_net /SW_M)
+    (add_net /SW_MODE)
     (add_net /USART1_RX)
     (add_net /USART1_TX)
     (add_net "Net-(C16-Pad1)")
@@ -405,9 +408,6 @@
     (add_net "Net-(U8-Pad21)")
     (add_net "Net-(U8-Pad22)")
     (add_net "Net-(U8-Pad25)")
-    (add_net "Net-(U8-Pad26)")
-    (add_net "Net-(U8-Pad27)")
-    (add_net "Net-(U8-Pad28)")
     (add_net "Net-(U8-Pad29)")
     (add_net "Net-(U8-Pad3)")
     (add_net "Net-(U8-Pad32)")
@@ -570,7 +570,7 @@
       (net 12 "Net-(D7-Pad1)"))
     (pad 1 smd rect (at -1.524 0 342) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 12 "Net-(D7-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -596,7 +596,7 @@
       (net 14 "Net-(D9-Pad1)"))
     (pad 1 smd rect (at -1.524 0 336) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 14 "Net-(D9-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -622,7 +622,7 @@
       (net 20 "Net-(D15-Pad1)"))
     (pad 1 smd rect (at -1.524 0 318) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 20 "Net-(D15-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -648,7 +648,7 @@
       (net 10 "Net-(D5-Pad1)"))
     (pad 1 smd rect (at -1.524 0 348) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 10 "Net-(D5-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -674,7 +674,7 @@
       (net 26 "Net-(D21-Pad1)"))
     (pad 1 smd rect (at -1.524 0 300) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 26 "Net-(D21-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1137,7 +1137,7 @@
     (fp_line (start -0.35 -0.6) (end 0.35 -0.6) (layer F.SilkS) (width 0.15))
     (fp_line (start 0.35 0.6) (end -0.35 0.6) (layer F.SilkS) (width 0.15))
     (pad 1 smd rect (at -0.95 0 180) (size 1.2 0.75) (layers F.Cu F.Paste F.Mask)
-      (net 214 "Net-(C16-Pad1)"))
+      (net 211 "Net-(C16-Pad1)"))
     (pad 2 smd rect (at 0.95 0 180) (size 1.2 0.75) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
     (model Capacitors_SMD.3dshapes/C_0603_HandSoldering.wrl
@@ -1166,7 +1166,7 @@
       (net 6 "Net-(D1-Pad1)"))
     (pad 1 smd rect (at -1.524 0) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 6 "Net-(D1-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1192,7 +1192,7 @@
       (net 7 "Net-(D2-Pad1)"))
     (pad 1 smd rect (at -1.524 0) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 7 "Net-(D2-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1218,7 +1218,7 @@
       (net 8 "Net-(D3-Pad1)"))
     (pad 1 smd rect (at -1.524 0 354) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 8 "Net-(D3-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1244,7 +1244,7 @@
       (net 9 "Net-(D4-Pad1)"))
     (pad 1 smd rect (at -1.524 0 354) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 9 "Net-(D4-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1270,7 +1270,7 @@
       (net 11 "Net-(D6-Pad1)"))
     (pad 1 smd rect (at -1.524 0 348) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 11 "Net-(D6-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1296,7 +1296,7 @@
       (net 13 "Net-(D8-Pad1)"))
     (pad 1 smd rect (at -1.524 0 342) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 13 "Net-(D8-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1322,7 +1322,7 @@
       (net 15 "Net-(D10-Pad1)"))
     (pad 1 smd rect (at -1.524 0 336) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 15 "Net-(D10-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1348,7 +1348,7 @@
       (net 16 "Net-(D11-Pad1)"))
     (pad 1 smd rect (at -1.524 0 330) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 16 "Net-(D11-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1374,7 +1374,7 @@
       (net 17 "Net-(D12-Pad1)"))
     (pad 1 smd rect (at -1.524 0 330) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 17 "Net-(D12-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1400,7 +1400,7 @@
       (net 18 "Net-(D13-Pad1)"))
     (pad 1 smd rect (at -1.524 0 324) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 18 "Net-(D13-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1426,7 +1426,7 @@
       (net 19 "Net-(D14-Pad1)"))
     (pad 1 smd rect (at -1.524 0 324) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 19 "Net-(D14-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1452,7 +1452,7 @@
       (net 21 "Net-(D16-Pad1)"))
     (pad 1 smd rect (at -1.524 0 318) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 21 "Net-(D16-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1478,7 +1478,7 @@
       (net 22 "Net-(D17-Pad1)"))
     (pad 1 smd rect (at -1.524 0 312) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 22 "Net-(D17-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1504,7 +1504,7 @@
       (net 23 "Net-(D18-Pad1)"))
     (pad 1 smd rect (at -1.524 0 312) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 23 "Net-(D18-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1530,7 +1530,7 @@
       (net 24 "Net-(D19-Pad1)"))
     (pad 1 smd rect (at -1.524 0 306) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 24 "Net-(D19-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1556,7 +1556,7 @@
       (net 25 "Net-(D20-Pad1)"))
     (pad 1 smd rect (at -1.524 0 306) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 25 "Net-(D20-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1582,7 +1582,7 @@
       (net 27 "Net-(D22-Pad1)"))
     (pad 1 smd rect (at -1.524 0 300) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 27 "Net-(D22-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1608,7 +1608,7 @@
       (net 28 "Net-(D23-Pad1)"))
     (pad 1 smd rect (at -1.524 0 294) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 28 "Net-(D23-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1634,7 +1634,7 @@
       (net 29 "Net-(D24-Pad1)"))
     (pad 1 smd rect (at -1.524 0 294) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 29 "Net-(D24-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1660,7 +1660,7 @@
       (net 30 "Net-(D25-Pad1)"))
     (pad 1 smd rect (at -1.524 0 288) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 30 "Net-(D25-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1686,7 +1686,7 @@
       (net 31 "Net-(D26-Pad1)"))
     (pad 1 smd rect (at -1.524 0 288) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 31 "Net-(D26-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1712,7 +1712,7 @@
       (net 32 "Net-(D27-Pad1)"))
     (pad 1 smd rect (at -1.524 0 282) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 32 "Net-(D27-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1738,7 +1738,7 @@
       (net 33 "Net-(D28-Pad1)"))
     (pad 1 smd rect (at -1.524 0 282) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 33 "Net-(D28-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1764,7 +1764,7 @@
       (net 34 "Net-(D29-Pad1)"))
     (pad 1 smd rect (at -1.524 0 276) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 34 "Net-(D29-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1790,7 +1790,7 @@
       (net 35 "Net-(D30-Pad1)"))
     (pad 1 smd rect (at -1.524 0 276) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 35 "Net-(D30-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1816,7 +1816,7 @@
       (net 36 "Net-(D31-Pad1)"))
     (pad 1 smd rect (at -1.524 0 270) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 36 "Net-(D31-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1842,7 +1842,7 @@
       (net 37 "Net-(D32-Pad1)"))
     (pad 1 smd rect (at -1.524 0 270) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 37 "Net-(D32-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1868,7 +1868,7 @@
       (net 38 "Net-(D33-Pad1)"))
     (pad 1 smd rect (at -1.524 0 264) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 38 "Net-(D33-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1894,7 +1894,7 @@
       (net 39 "Net-(D34-Pad1)"))
     (pad 1 smd rect (at -1.524 0 264) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 39 "Net-(D34-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1920,7 +1920,7 @@
       (net 40 "Net-(D35-Pad1)"))
     (pad 1 smd rect (at -1.524 0 258) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 40 "Net-(D35-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1946,7 +1946,7 @@
       (net 41 "Net-(D36-Pad1)"))
     (pad 1 smd rect (at -1.524 0 258) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 41 "Net-(D36-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1972,7 +1972,7 @@
       (net 42 "Net-(D37-Pad1)"))
     (pad 1 smd rect (at -1.524 0 252) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 42 "Net-(D37-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1998,7 +1998,7 @@
       (net 43 "Net-(D38-Pad1)"))
     (pad 1 smd rect (at -1.524 0 252) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 43 "Net-(D38-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2024,7 +2024,7 @@
       (net 44 "Net-(D39-Pad1)"))
     (pad 1 smd rect (at -1.524 0 246) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 44 "Net-(D39-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2050,7 +2050,7 @@
       (net 45 "Net-(D40-Pad1)"))
     (pad 1 smd rect (at -1.524 0 246) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 45 "Net-(D40-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2076,7 +2076,7 @@
       (net 46 "Net-(D41-Pad1)"))
     (pad 1 smd rect (at -1.524 0 240) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 46 "Net-(D41-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2102,7 +2102,7 @@
       (net 47 "Net-(D42-Pad1)"))
     (pad 1 smd rect (at -1.524 0 240) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 47 "Net-(D42-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2128,7 +2128,7 @@
       (net 48 "Net-(D43-Pad1)"))
     (pad 1 smd rect (at -1.524 0 234) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 48 "Net-(D43-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2154,7 +2154,7 @@
       (net 49 "Net-(D44-Pad1)"))
     (pad 1 smd rect (at -1.524 0 234) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 49 "Net-(D44-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2180,7 +2180,7 @@
       (net 50 "Net-(D45-Pad1)"))
     (pad 1 smd rect (at -1.524 0 228) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 50 "Net-(D45-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2206,7 +2206,7 @@
       (net 51 "Net-(D46-Pad1)"))
     (pad 1 smd rect (at -1.524 0 228) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 51 "Net-(D46-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2232,7 +2232,7 @@
       (net 52 "Net-(D47-Pad1)"))
     (pad 1 smd rect (at -1.524 0 222) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 52 "Net-(D47-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2258,7 +2258,7 @@
       (net 53 "Net-(D48-Pad1)"))
     (pad 1 smd rect (at -1.524 0 222) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 53 "Net-(D48-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2284,7 +2284,7 @@
       (net 54 "Net-(D49-Pad1)"))
     (pad 1 smd rect (at -1.524 0 216) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 54 "Net-(D49-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2310,7 +2310,7 @@
       (net 55 "Net-(D50-Pad1)"))
     (pad 1 smd rect (at -1.524 0 216) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 55 "Net-(D50-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2336,7 +2336,7 @@
       (net 56 "Net-(D51-Pad1)"))
     (pad 1 smd rect (at -1.524 0 210) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 56 "Net-(D51-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2362,7 +2362,7 @@
       (net 57 "Net-(D52-Pad1)"))
     (pad 1 smd rect (at -1.524 0 210) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 57 "Net-(D52-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2388,7 +2388,7 @@
       (net 58 "Net-(D53-Pad1)"))
     (pad 1 smd rect (at -1.524 0 204) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 58 "Net-(D53-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2414,7 +2414,7 @@
       (net 59 "Net-(D54-Pad1)"))
     (pad 1 smd rect (at -1.524 0 204) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 59 "Net-(D54-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2440,7 +2440,7 @@
       (net 60 "Net-(D55-Pad1)"))
     (pad 1 smd rect (at -1.524 0 198) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 60 "Net-(D55-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2466,7 +2466,7 @@
       (net 61 "Net-(D56-Pad1)"))
     (pad 1 smd rect (at -1.524 0 198) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 61 "Net-(D56-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2492,7 +2492,7 @@
       (net 62 "Net-(D57-Pad1)"))
     (pad 1 smd rect (at -1.524 0 192) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 62 "Net-(D57-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2518,7 +2518,7 @@
       (net 63 "Net-(D58-Pad1)"))
     (pad 1 smd rect (at -1.524 0 192) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 63 "Net-(D58-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2544,7 +2544,7 @@
       (net 64 "Net-(D59-Pad1)"))
     (pad 1 smd rect (at -1.524 0 186) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 64 "Net-(D59-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2570,7 +2570,7 @@
       (net 65 "Net-(D60-Pad1)"))
     (pad 1 smd rect (at -1.524 0 186) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 65 "Net-(D60-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2596,7 +2596,7 @@
       (net 66 "Net-(D61-Pad1)"))
     (pad 1 smd rect (at -1.524 0 180) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 66 "Net-(D61-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2622,7 +2622,7 @@
       (net 67 "Net-(D62-Pad1)"))
     (pad 1 smd rect (at -1.524 0 180) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 67 "Net-(D62-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2648,7 +2648,7 @@
       (net 68 "Net-(D63-Pad1)"))
     (pad 1 smd rect (at -1.524 0 174) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 68 "Net-(D63-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2674,7 +2674,7 @@
       (net 69 "Net-(D64-Pad1)"))
     (pad 1 smd rect (at -1.524 0 174) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 69 "Net-(D64-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2700,7 +2700,7 @@
       (net 70 "Net-(D65-Pad1)"))
     (pad 1 smd rect (at -1.524 0 168) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 70 "Net-(D65-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2726,7 +2726,7 @@
       (net 71 "Net-(D66-Pad1)"))
     (pad 1 smd rect (at -1.524 0 168) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 71 "Net-(D66-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2752,7 +2752,7 @@
       (net 72 "Net-(D67-Pad1)"))
     (pad 1 smd rect (at -1.524 0 162) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 72 "Net-(D67-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2778,7 +2778,7 @@
       (net 73 "Net-(D68-Pad1)"))
     (pad 1 smd rect (at -1.524 0 162) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 73 "Net-(D68-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2804,7 +2804,7 @@
       (net 74 "Net-(D69-Pad1)"))
     (pad 1 smd rect (at -1.524 0 156) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 74 "Net-(D69-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2830,7 +2830,7 @@
       (net 75 "Net-(D70-Pad1)"))
     (pad 1 smd rect (at -1.524 0 156) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 75 "Net-(D70-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2856,7 +2856,7 @@
       (net 76 "Net-(D71-Pad1)"))
     (pad 1 smd rect (at -1.524 0 150) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 76 "Net-(D71-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2882,7 +2882,7 @@
       (net 77 "Net-(D72-Pad1)"))
     (pad 1 smd rect (at -1.524 0 150) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 77 "Net-(D72-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2908,7 +2908,7 @@
       (net 78 "Net-(D73-Pad1)"))
     (pad 1 smd rect (at -1.524 0 144) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 78 "Net-(D73-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2934,7 +2934,7 @@
       (net 79 "Net-(D74-Pad1)"))
     (pad 1 smd rect (at -1.524 0 144) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 79 "Net-(D74-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2960,7 +2960,7 @@
       (net 80 "Net-(D75-Pad1)"))
     (pad 1 smd rect (at -1.524 0 138) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 80 "Net-(D75-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2986,7 +2986,7 @@
       (net 81 "Net-(D76-Pad1)"))
     (pad 1 smd rect (at -1.524 0 138) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 81 "Net-(D76-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3012,7 +3012,7 @@
       (net 82 "Net-(D77-Pad1)"))
     (pad 1 smd rect (at -1.524 0 132) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 82 "Net-(D77-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3038,7 +3038,7 @@
       (net 83 "Net-(D78-Pad1)"))
     (pad 1 smd rect (at -1.524 0 132) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 83 "Net-(D78-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3064,7 +3064,7 @@
       (net 84 "Net-(D79-Pad1)"))
     (pad 1 smd rect (at -1.524 0 126) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 84 "Net-(D79-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3090,7 +3090,7 @@
       (net 85 "Net-(D80-Pad1)"))
     (pad 1 smd rect (at -1.524 0 126) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 85 "Net-(D80-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3116,7 +3116,7 @@
       (net 86 "Net-(D81-Pad1)"))
     (pad 1 smd rect (at -1.524 0 120) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 86 "Net-(D81-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3142,7 +3142,7 @@
       (net 87 "Net-(D82-Pad1)"))
     (pad 1 smd rect (at -1.524 0 120) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 87 "Net-(D82-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3168,7 +3168,7 @@
       (net 88 "Net-(D83-Pad1)"))
     (pad 1 smd rect (at -1.524 0 114) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 88 "Net-(D83-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3194,7 +3194,7 @@
       (net 89 "Net-(D84-Pad1)"))
     (pad 1 smd rect (at -1.524 0 114) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 89 "Net-(D84-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3220,7 +3220,7 @@
       (net 90 "Net-(D85-Pad1)"))
     (pad 1 smd rect (at -1.524 0 108) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 90 "Net-(D85-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3246,7 +3246,7 @@
       (net 91 "Net-(D86-Pad1)"))
     (pad 1 smd rect (at -1.524 0 108) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 91 "Net-(D86-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3272,7 +3272,7 @@
       (net 92 "Net-(D87-Pad1)"))
     (pad 1 smd rect (at -1.524 0 102) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 92 "Net-(D87-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3298,7 +3298,7 @@
       (net 93 "Net-(D88-Pad1)"))
     (pad 1 smd rect (at -1.524 0 102) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 93 "Net-(D88-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3324,7 +3324,7 @@
       (net 94 "Net-(D89-Pad1)"))
     (pad 1 smd rect (at -1.524 0 96) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 94 "Net-(D89-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3350,7 +3350,7 @@
       (net 95 "Net-(D90-Pad1)"))
     (pad 1 smd rect (at -1.524 0 96) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 95 "Net-(D90-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3376,7 +3376,7 @@
       (net 96 "Net-(D91-Pad1)"))
     (pad 1 smd rect (at -1.524 0 90) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 96 "Net-(D91-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3402,7 +3402,7 @@
       (net 97 "Net-(D92-Pad1)"))
     (pad 1 smd rect (at -1.524 0 90) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 97 "Net-(D92-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3428,7 +3428,7 @@
       (net 98 "Net-(D93-Pad1)"))
     (pad 1 smd rect (at -1.524 0 84) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 98 "Net-(D93-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3454,7 +3454,7 @@
       (net 99 "Net-(D94-Pad1)"))
     (pad 1 smd rect (at -1.524 0 84) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 99 "Net-(D94-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3480,7 +3480,7 @@
       (net 100 "Net-(D95-Pad1)"))
     (pad 1 smd rect (at -1.524 0 78) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 100 "Net-(D95-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3506,7 +3506,7 @@
       (net 101 "Net-(D96-Pad1)"))
     (pad 1 smd rect (at -1.524 0 78) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 101 "Net-(D96-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3532,7 +3532,7 @@
       (net 102 "Net-(D97-Pad1)"))
     (pad 1 smd rect (at -1.524 0 72) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 102 "Net-(D97-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3558,7 +3558,7 @@
       (net 103 "Net-(D98-Pad1)"))
     (pad 1 smd rect (at -1.524 0 72) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 103 "Net-(D98-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3584,7 +3584,7 @@
       (net 104 "Net-(D99-Pad1)"))
     (pad 1 smd rect (at -1.524 0 66) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 104 "Net-(D99-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3610,7 +3610,7 @@
       (net 105 "Net-(D100-Pad1)"))
     (pad 1 smd rect (at -1.524 0 66) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 105 "Net-(D100-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3636,7 +3636,7 @@
       (net 106 "Net-(D101-Pad1)"))
     (pad 1 smd rect (at -1.524 0 60) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 106 "Net-(D101-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3662,7 +3662,7 @@
       (net 107 "Net-(D102-Pad1)"))
     (pad 1 smd rect (at -1.524 0 60) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 107 "Net-(D102-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3688,7 +3688,7 @@
       (net 108 "Net-(D103-Pad1)"))
     (pad 1 smd rect (at -1.524 0 54) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 108 "Net-(D103-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3714,7 +3714,7 @@
       (net 109 "Net-(D104-Pad1)"))
     (pad 1 smd rect (at -1.524 0 54) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 109 "Net-(D104-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3740,7 +3740,7 @@
       (net 110 "Net-(D105-Pad1)"))
     (pad 1 smd rect (at -1.524 0 48) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 110 "Net-(D105-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3766,7 +3766,7 @@
       (net 111 "Net-(D106-Pad1)"))
     (pad 1 smd rect (at -1.524 0 48) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 111 "Net-(D106-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3792,7 +3792,7 @@
       (net 112 "Net-(D107-Pad1)"))
     (pad 1 smd rect (at -1.524 0 42) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 112 "Net-(D107-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3818,7 +3818,7 @@
       (net 113 "Net-(D108-Pad1)"))
     (pad 1 smd rect (at -1.524 0 42) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 113 "Net-(D108-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3844,7 +3844,7 @@
       (net 114 "Net-(D109-Pad1)"))
     (pad 1 smd rect (at -1.524 0 36) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 114 "Net-(D109-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3870,7 +3870,7 @@
       (net 115 "Net-(D110-Pad1)"))
     (pad 1 smd rect (at -1.524 0 36) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 115 "Net-(D110-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3896,7 +3896,7 @@
       (net 116 "Net-(D111-Pad1)"))
     (pad 1 smd rect (at -1.524 0 30) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 116 "Net-(D111-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3922,7 +3922,7 @@
       (net 117 "Net-(D112-Pad1)"))
     (pad 1 smd rect (at -1.524 0 30) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 117 "Net-(D112-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3948,7 +3948,7 @@
       (net 118 "Net-(D113-Pad1)"))
     (pad 1 smd rect (at -1.524 0 24) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 118 "Net-(D113-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -3974,7 +3974,7 @@
       (net 119 "Net-(D114-Pad1)"))
     (pad 1 smd rect (at -1.524 0 24) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 119 "Net-(D114-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -4000,7 +4000,7 @@
       (net 120 "Net-(D115-Pad1)"))
     (pad 1 smd rect (at -1.524 0 18) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 120 "Net-(D115-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -4026,7 +4026,7 @@
       (net 121 "Net-(D116-Pad1)"))
     (pad 1 smd rect (at -1.524 0 18) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 121 "Net-(D116-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -4052,7 +4052,7 @@
       (net 122 "Net-(D117-Pad1)"))
     (pad 1 smd rect (at -1.524 0 12) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 122 "Net-(D117-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -4078,7 +4078,7 @@
       (net 123 "Net-(D118-Pad1)"))
     (pad 1 smd rect (at -1.524 0 12) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 123 "Net-(D118-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -4104,7 +4104,7 @@
       (net 124 "Net-(D119-Pad1)"))
     (pad 1 smd rect (at -1.524 0 6) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 124 "Net-(D119-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -4130,7 +4130,7 @@
       (net 125 "Net-(D120-Pad1)"))
     (pad 1 smd rect (at -1.524 0 6) (size 1.5 2.6) (layers F.Cu F.Paste F.Mask)
       (net 125 "Net-(D120-Pad1)"))
-    (model /home/jan/NiceClock/hardware_kicad/3d/led_plcc2_3528.wrl
+    (model ${KIPRJMOD}/custom_janh.pretty/led_plcc2_3528.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -5440,17 +5440,17 @@
     (pad 17 smd rect (at 4.7 5.715) (size 2 0.6) (layers F.Cu F.Paste F.Mask)
       (net 125 "Net-(D120-Pad1)"))
     (pad 18 smd rect (at 4.7 4.445) (size 2 0.6) (layers F.Cu F.Paste F.Mask)
-      (net 208 "Net-(U7-Pad18)"))
+      (net 205 "Net-(U7-Pad18)"))
     (pad 19 smd rect (at 4.7 3.175) (size 2 0.6) (layers F.Cu F.Paste F.Mask)
-      (net 209 "Net-(U7-Pad19)"))
+      (net 206 "Net-(U7-Pad19)"))
     (pad 20 smd rect (at 4.7 1.905) (size 2 0.6) (layers F.Cu F.Paste F.Mask)
-      (net 210 "Net-(U7-Pad20)"))
+      (net 207 "Net-(U7-Pad20)"))
     (pad 21 smd rect (at 4.7 0.635) (size 2 0.6) (layers F.Cu F.Paste F.Mask)
-      (net 211 "Net-(U7-Pad21)"))
+      (net 208 "Net-(U7-Pad21)"))
     (pad 22 smd rect (at 4.7 -0.635) (size 2 0.6) (layers F.Cu F.Paste F.Mask)
-      (net 212 "Net-(U7-Pad22)"))
+      (net 209 "Net-(U7-Pad22)"))
     (pad 23 smd rect (at 4.7 -1.905) (size 2 0.6) (layers F.Cu F.Paste F.Mask)
-      (net 213 "Net-(U7-Pad23)"))
+      (net 210 "Net-(U7-Pad23)"))
     (pad 24 smd rect (at 4.7 -3.175) (size 2 0.6) (layers F.Cu F.Paste F.Mask)
       (net 148 "Net-(R14-Pad2)"))
     (pad 25 smd rect (at 4.7 -4.445) (size 2 0.6) (layers F.Cu F.Paste F.Mask)
@@ -5506,7 +5506,7 @@
     (pad 6 smd rect (at -4.35 -0.25) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
       (net 4 /OSC_OUT))
     (pad 7 smd rect (at -4.35 0.25) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 214 "Net-(C16-Pad1)"))
+      (net 211 "Net-(C16-Pad1)"))
     (pad 8 smd rect (at -4.35 0.75) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
     (pad 9 smd rect (at -4.35 1.25) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
@@ -5544,21 +5544,21 @@
     (pad 25 smd rect (at 4.35 2.75) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
       (net 194 "Net-(U8-Pad25)"))
     (pad 26 smd rect (at 4.35 2.25) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 195 "Net-(U8-Pad26)"))
+      (net 220 /SW_M))
     (pad 27 smd rect (at 4.35 1.75) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 196 "Net-(U8-Pad27)"))
+      (net 219 /SW_H))
     (pad 28 smd rect (at 4.35 1.25) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 197 "Net-(U8-Pad28)"))
+      (net 218 /SW_MODE))
     (pad 29 smd rect (at 4.35 0.75) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 198 "Net-(U8-Pad29)"))
+      (net 195 "Net-(U8-Pad29)"))
     (pad 30 smd rect (at 4.35 0.25) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 199 /USART1_TX))
+      (net 196 /USART1_TX))
     (pad 31 smd rect (at 4.35 -0.25) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 200 /USART1_RX))
+      (net 197 /USART1_RX))
     (pad 32 smd rect (at 4.35 -0.75) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 201 "Net-(U8-Pad32)"))
+      (net 198 "Net-(U8-Pad32)"))
     (pad 33 smd rect (at 4.35 -1.25) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 202 "Net-(U8-Pad33)"))
+      (net 199 "Net-(U8-Pad33)"))
     (pad 34 smd rect (at 4.35 -1.75) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
       (net 126 /SWDIO))
     (pad 35 smd rect (at 4.35 -2.25) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
@@ -5568,23 +5568,23 @@
     (pad 37 smd rect (at 2.75 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
       (net 127 /SWCLK))
     (pad 38 smd rect (at 2.25 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 203 "Net-(U8-Pad38)"))
+      (net 200 "Net-(U8-Pad38)"))
     (pad 39 smd rect (at 1.75 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 204 "Net-(U8-Pad39)"))
+      (net 201 "Net-(U8-Pad39)"))
     (pad 40 smd rect (at 1.25 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 205 "Net-(U8-Pad40)"))
+      (net 202 "Net-(U8-Pad40)"))
     (pad 41 smd rect (at 0.75 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 217 /RTC_MFP))
+      (net 214 /RTC_MFP))
     (pad 42 smd rect (at 0.25 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 218 /RTC_SCL))
+      (net 215 /RTC_SCL))
     (pad 43 smd rect (at -0.25 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 219 /RTC_SDA))
+      (net 216 /RTC_SDA))
     (pad 44 smd rect (at -0.75 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
       (net 150 /BOOT0))
     (pad 45 smd rect (at -1.25 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 206 "Net-(U8-Pad45)"))
+      (net 203 "Net-(U8-Pad45)"))
     (pad 46 smd rect (at -1.75 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
-      (net 207 "Net-(U8-Pad46)"))
+      (net 204 "Net-(U8-Pad46)"))
     (pad 47 smd rect (at -2.25 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
     (pad 48 smd rect (at -2.75 -4.35 90) (size 1.3 0.25) (layers F.Cu F.Paste F.Mask)
@@ -5676,7 +5676,7 @@
     (fp_line (start -0.35 -0.6) (end 0.35 -0.6) (layer F.SilkS) (width 0.15))
     (fp_line (start 0.35 0.6) (end -0.35 0.6) (layer F.SilkS) (width 0.15))
     (pad 1 smd rect (at -0.95 0 90) (size 1.2 0.75) (layers F.Cu F.Paste F.Mask)
-      (net 215 "Net-(C17-Pad1)"))
+      (net 212 "Net-(C17-Pad1)"))
     (pad 2 smd rect (at 0.95 0 90) (size 1.2 0.75) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
     (model Capacitors_SMD.3dshapes/C_0603_HandSoldering.wrl
@@ -5705,7 +5705,7 @@
     (fp_line (start -0.35 -0.6) (end 0.35 -0.6) (layer F.SilkS) (width 0.15))
     (fp_line (start 0.35 0.6) (end -0.35 0.6) (layer F.SilkS) (width 0.15))
     (pad 1 smd rect (at -0.95 0 270) (size 1.2 0.75) (layers F.Cu F.Paste F.Mask)
-      (net 216 "Net-(C18-Pad1)"))
+      (net 213 "Net-(C18-Pad1)"))
     (pad 2 smd rect (at 0.95 0 270) (size 1.2 0.75) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
     (model Capacitors_SMD.3dshapes/C_0603_HandSoldering.wrl
@@ -5763,7 +5763,7 @@
     (fp_line (start 0.5 0.675) (end -0.5 0.675) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.675) (end 0.5 -0.675) (layer F.SilkS) (width 0.15))
     (pad 1 smd rect (at -1.1 0 90) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
-      (net 217 /RTC_MFP))
+      (net 214 /RTC_MFP))
     (pad 2 smd rect (at 1.1 0 90) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
       (net 2 +3V3))
     (model Resistors_SMD.3dshapes/R_0603_HandSoldering.wrl
@@ -5792,7 +5792,7 @@
     (fp_line (start 0.5 0.675) (end -0.5 0.675) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.675) (end 0.5 -0.675) (layer F.SilkS) (width 0.15))
     (pad 1 smd rect (at -1.1 0 90) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
-      (net 218 /RTC_SCL))
+      (net 215 /RTC_SCL))
     (pad 2 smd rect (at 1.1 0 90) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
       (net 2 +3V3))
     (model Resistors_SMD.3dshapes/R_0603_HandSoldering.wrl
@@ -5821,7 +5821,7 @@
     (fp_line (start 0.5 0.675) (end -0.5 0.675) (layer F.SilkS) (width 0.15))
     (fp_line (start -0.5 -0.675) (end 0.5 -0.675) (layer F.SilkS) (width 0.15))
     (pad 1 smd rect (at -1.1 0 90) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
-      (net 219 /RTC_SDA))
+      (net 216 /RTC_SDA))
     (pad 2 smd rect (at 1.1 0 90) (size 1.2 0.9) (layers F.Cu F.Paste F.Mask)
       (net 2 +3V3))
     (model Resistors_SMD.3dshapes/R_0603_HandSoldering.wrl
@@ -5855,19 +5855,19 @@
     (fp_line (start -1.675 1.675) (end 1.675 1.675) (layer F.SilkS) (width 0.15))
     (fp_line (start -1.675 -1.425) (end -2.925 -1.425) (layer F.SilkS) (width 0.15))
     (pad 1 smd rect (at -2.2 -0.975) (size 1.45 0.45) (layers F.Cu F.Paste F.Mask)
-      (net 215 "Net-(C17-Pad1)"))
+      (net 212 "Net-(C17-Pad1)"))
     (pad 2 smd rect (at -2.2 -0.325) (size 1.45 0.45) (layers F.Cu F.Paste F.Mask)
-      (net 216 "Net-(C18-Pad1)"))
+      (net 213 "Net-(C18-Pad1)"))
     (pad 3 smd rect (at -2.2 0.325) (size 1.45 0.45) (layers F.Cu F.Paste F.Mask)
-      (net 220 "Net-(U10-Pad3)"))
+      (net 217 "Net-(U10-Pad3)"))
     (pad 4 smd rect (at -2.2 0.975) (size 1.45 0.45) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
     (pad 5 smd rect (at 2.2 0.975) (size 1.45 0.45) (layers F.Cu F.Paste F.Mask)
-      (net 219 /RTC_SDA))
+      (net 216 /RTC_SDA))
     (pad 6 smd rect (at 2.2 0.325) (size 1.45 0.45) (layers F.Cu F.Paste F.Mask)
-      (net 218 /RTC_SCL))
+      (net 215 /RTC_SCL))
     (pad 7 smd rect (at 2.2 -0.325) (size 1.45 0.45) (layers F.Cu F.Paste F.Mask)
-      (net 217 /RTC_MFP))
+      (net 214 /RTC_MFP))
     (pad 8 smd rect (at 2.2 -0.975) (size 1.45 0.45) (layers F.Cu F.Paste F.Mask)
       (net 2 +3V3))
     (model Housings_SSOP.3dshapes/MSOP-8_3x3mm_Pitch0.65mm.wrl
@@ -5889,11 +5889,331 @@
     (fp_line (start -1.6 -1) (end 1.6 -1) (layer F.SilkS) (width 0.05))
     (fp_line (start -1.6 1) (end 1.6 1) (layer F.SilkS) (width 0.05))
     (pad 1 smd rect (at -1.4 0 270) (size 2 1.8) (layers F.Cu F.Paste F.Mask)
-      (net 215 "Net-(C17-Pad1)"))
+      (net 212 "Net-(C17-Pad1)"))
     (pad 2 smd rect (at 1.4 0 270) (size 2 1.8) (layers F.Cu F.Paste F.Mask)
-      (net 216 "Net-(C18-Pad1)"))
+      (net 213 "Net-(C18-Pad1)"))
   )
 
+  (module custom_janh:DC_JACK1 (layer F.Cu) (tedit 568079AC) (tstamp 568168A0)
+    (at 172.974 189.23)
+    (path /5682E4EC)
+    (fp_text reference CON1 (at 2.2 -1.6) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value BARREL_JACK (at -3.8 0) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start 9.3 2.5) (end 7.9 2.5) (layer F.SilkS) (width 0.05))
+    (fp_line (start 0 -2.5) (end 0 2.5) (layer F.SilkS) (width 0.05))
+    (fp_line (start 13 -2.5) (end 0 -2.5) (layer F.SilkS) (width 0.05))
+    (fp_line (start 13 2.5) (end 13 -2.5) (layer F.SilkS) (width 0.05))
+    (fp_line (start 0 2.5) (end 4 2.5) (layer F.SilkS) (width 0.05))
+    (pad 2 thru_hole circle (at 6 2.8) (size 3 3) (drill 1.5) (layers *.Cu *.Mask F.SilkS)
+      (net 1 GND))
+    (pad 3 thru_hole circle (at 8.4 0) (size 3 3) (drill 1.5) (layers *.Cu *.Mask F.SilkS)
+      (net 1 GND))
+    (pad 1 thru_hole circle (at 11.2 2.8) (size 3 3) (drill 1.5) (layers *.Cu *.Mask F.SilkS)
+      (net 5 +5V))
+  )
+
+  (module custom_janh:Pin_Header_SMD_Angled_1x04 (layer F.Cu) (tedit 567D3E0B) (tstamp 568168DA)
+    (at 147.828 97.663)
+    (descr "SMD pin header")
+    (tags "pin header")
+    (path /5682979B)
+    (fp_text reference P2 (at 0 -5.1) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value CONN_01X04 (at 0 -3.1) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start -2.54 -1.778) (end 10.668 -1.778) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 10.668 -1.778) (end 10.668 9.398) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 10.668 9.398) (end -2.54 9.398) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -2.54 9.398) (end -2.54 -1.778) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 1.524 6.35) (end 4.064 6.35) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 7.366) (end 1.143 7.366) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 7.874) (end 1.143 7.874) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 6.35) (end 4.064 6.35) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 6.35) (end 1.524 8.89) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 8.89) (end 4.064 8.89) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.064 7.366) (end 10.16 7.366) (layer F.SilkS) (width 0.15))
+    (fp_line (start 10.16 7.366) (end 10.16 7.874) (layer F.SilkS) (width 0.15))
+    (fp_line (start 10.16 7.874) (end 4.064 7.874) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.064 8.89) (end 4.064 6.35) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 6.35) (end 4.064 6.35) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 3.81) (end 4.064 3.81) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.064 6.35) (end 4.064 3.81) (layer F.SilkS) (width 0.15))
+    (fp_line (start 10.16 5.334) (end 4.064 5.334) (layer F.SilkS) (width 0.15))
+    (fp_line (start 10.16 4.826) (end 10.16 5.334) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.064 4.826) (end 10.16 4.826) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 6.35) (end 4.064 6.35) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 3.81) (end 1.524 6.35) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 3.81) (end 4.064 3.81) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 5.334) (end 1.143 5.334) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 4.826) (end 1.143 4.826) (layer F.SilkS) (width 0.15))
+    (fp_line (start -2.316 -1.55) (end -2.316 0) (layer F.SilkS) (width 0.15))
+    (fp_line (start -1.016 -1.55) (end -2.316 -1.55) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.191 -0.127) (end 10.033 -0.127) (layer F.SilkS) (width 0.15))
+    (fp_line (start 10.033 -0.127) (end 10.033 0.127) (layer F.SilkS) (width 0.15))
+    (fp_line (start 10.033 0.127) (end 4.191 0.127) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.191 0.127) (end 4.191 0) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.191 0) (end 10.033 0) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 -0.254) (end 1.143 -0.254) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 0.254) (end 1.143 0.254) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 2.286) (end 1.143 2.286) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 2.794) (end 1.143 2.794) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 -1.27) (end 4.064 -1.27) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 1.27) (end 4.064 1.27) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 1.27) (end 1.524 3.81) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 3.81) (end 4.064 3.81) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.064 2.286) (end 10.16 2.286) (layer F.SilkS) (width 0.15))
+    (fp_line (start 10.16 2.286) (end 10.16 2.794) (layer F.SilkS) (width 0.15))
+    (fp_line (start 10.16 2.794) (end 4.064 2.794) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.064 3.81) (end 4.064 1.27) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.064 1.27) (end 4.064 -1.27) (layer F.SilkS) (width 0.15))
+    (fp_line (start 10.16 0.254) (end 4.064 0.254) (layer F.SilkS) (width 0.15))
+    (fp_line (start 10.16 -0.254) (end 10.16 0.254) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.064 -0.254) (end 10.16 -0.254) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 1.27) (end 4.064 1.27) (layer F.SilkS) (width 0.15))
+    (fp_line (start 1.524 -1.27) (end 1.524 1.27) (layer F.SilkS) (width 0.15))
+    (pad 4 smd rect (at -0.508 7.62) (size 3 1.524) (layers F.Cu F.Paste F.Mask)
+      (net 1 GND))
+    (pad 3 smd rect (at -0.508 5.08) (size 3 1.524) (layers F.Cu F.Paste F.Mask)
+      (net 197 /USART1_RX))
+    (pad 1 smd rect (at -0.508 0) (size 3 1.524) (layers F.Cu F.Paste F.Mask)
+      (net 2 +3V3))
+    (pad 2 smd rect (at -0.508 2.54) (size 3 1.524) (layers F.Cu F.Paste F.Mask)
+      (net 196 /USART1_TX))
+    (model Pin_Headers.3dshapes/Pin_Header_Angled_1x02.wrl
+      (at (xyz 0 -0.05 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
+  )
+
+  (module Buttons_Switches_SMD:SW_SPST_PTS645 (layer F.Cu) (tedit 54EA6920) (tstamp 568168EF)
+    (at 160.439 164.048)
+    (descr "C&K Components SPST SMD PTS645 Series 6mm Tact Switch")
+    (tags "SPST Button Switch")
+    (path /56807648)
+    (fp_text reference SW1 (at 0 -0.8) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value SW_PUSH (at 0.05 0.8) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 1.75 -0.05) (layer F.SilkS) (width 0.15))
+    (fp_line (start 5.05 3.4) (end 5.05 -3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.05 -3.4) (end -5.05 3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.05 3.4) (end 5.05 3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.05 -3.4) (end 5.05 -3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 3.225 -3.225) (end 3.225 -3.1) (layer F.SilkS) (width 0.15))
+    (fp_line (start 3.225 3.225) (end 3.225 3.1) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.225) (end -3.225 3.1) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.1) (end -3.225 -3.225) (layer F.SilkS) (width 0.15))
+    (fp_line (start 3.225 -1.4) (end 3.225 1.4) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.225) (end 3.225 -3.225) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 -1.4) (end -3.225 1.4) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.225) (end 3.225 3.225) (layer F.SilkS) (width 0.15))
+    (pad 2 smd rect (at -3.975 2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 1 GND))
+    (pad 1 smd rect (at -3.975 -2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 218 /SW_MODE))
+    (pad 1 smd rect (at 3.975 -2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 218 /SW_MODE))
+    (pad 2 smd rect (at 3.975 2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 1 GND))
+  )
+
+  (module Buttons_Switches_SMD:SW_SPST_PTS645 (layer F.Cu) (tedit 54EA6920) (tstamp 56816904)
+    (at 160.439 171.668)
+    (descr "C&K Components SPST SMD PTS645 Series 6mm Tact Switch")
+    (tags "SPST Button Switch")
+    (path /56807FAE)
+    (fp_text reference SW2 (at 0 -0.8) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value SW_PUSH (at 0.05 0.8) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 1.75 -0.05) (layer F.SilkS) (width 0.15))
+    (fp_line (start 5.05 3.4) (end 5.05 -3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.05 -3.4) (end -5.05 3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.05 3.4) (end 5.05 3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.05 -3.4) (end 5.05 -3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 3.225 -3.225) (end 3.225 -3.1) (layer F.SilkS) (width 0.15))
+    (fp_line (start 3.225 3.225) (end 3.225 3.1) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.225) (end -3.225 3.1) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.1) (end -3.225 -3.225) (layer F.SilkS) (width 0.15))
+    (fp_line (start 3.225 -1.4) (end 3.225 1.4) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.225) (end 3.225 -3.225) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 -1.4) (end -3.225 1.4) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.225) (end 3.225 3.225) (layer F.SilkS) (width 0.15))
+    (pad 2 smd rect (at -3.975 2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 1 GND))
+    (pad 1 smd rect (at -3.975 -2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 219 /SW_H))
+    (pad 1 smd rect (at 3.975 -2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 219 /SW_H))
+    (pad 2 smd rect (at 3.975 2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 1 GND))
+  )
+
+  (module Buttons_Switches_SMD:SW_SPST_PTS645 (layer F.Cu) (tedit 54EA6920) (tstamp 56816919)
+    (at 160.439 179.288)
+    (descr "C&K Components SPST SMD PTS645 Series 6mm Tact Switch")
+    (tags "SPST Button Switch")
+    (path /568081DE)
+    (fp_text reference SW3 (at 0 -0.8) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value SW_PUSH (at 0.05 0.8) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 1.75 -0.05) (layer F.SilkS) (width 0.15))
+    (fp_line (start 5.05 3.4) (end 5.05 -3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.05 -3.4) (end -5.05 3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.05 3.4) (end 5.05 3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.05 -3.4) (end 5.05 -3.4) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 3.225 -3.225) (end 3.225 -3.1) (layer F.SilkS) (width 0.15))
+    (fp_line (start 3.225 3.225) (end 3.225 3.1) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.225) (end -3.225 3.1) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.1) (end -3.225 -3.225) (layer F.SilkS) (width 0.15))
+    (fp_line (start 3.225 -1.4) (end 3.225 1.4) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.225) (end 3.225 -3.225) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 -1.4) (end -3.225 1.4) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.225) (end 3.225 3.225) (layer F.SilkS) (width 0.15))
+    (pad 2 smd rect (at -3.975 2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 1 GND))
+    (pad 1 smd rect (at -3.975 -2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 220 /SW_M))
+    (pad 1 smd rect (at 3.975 -2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 220 /SW_M))
+    (pad 2 smd rect (at 3.975 2.25) (size 1.55 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 1 GND))
+  )
+
+  (module Buttons_Switches_SMD:SW_SPST_PTS645 (layer B.Cu) (tedit 54EA6920) (tstamp 56816BA8)
+    (at 160.439 179.288 180)
+    (descr "C&K Components SPST SMD PTS645 Series 6mm Tact Switch")
+    (tags "SPST Button Switch")
+    (path /56835E28)
+    (fp_text reference SW4 (at 0 0.8 180) (layer B.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value SW_PUSH (at 0.05 -0.8 180) (layer B.Fab)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_circle (center 0 0) (end 1.75 0.05) (layer B.SilkS) (width 0.15))
+    (fp_line (start 5.05 -3.4) (end 5.05 3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -5.05 3.4) (end -5.05 -3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -5.05 -3.4) (end 5.05 -3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -5.05 3.4) (end 5.05 3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start 3.225 3.225) (end 3.225 3.1) (layer B.SilkS) (width 0.15))
+    (fp_line (start 3.225 -3.225) (end 3.225 -3.1) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.225) (end -3.225 -3.1) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.1) (end -3.225 3.225) (layer B.SilkS) (width 0.15))
+    (fp_line (start 3.225 1.4) (end 3.225 -1.4) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.225) (end 3.225 3.225) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 1.4) (end -3.225 -1.4) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.225) (end 3.225 -3.225) (layer B.SilkS) (width 0.15))
+    (pad 2 smd rect (at -3.975 -2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 1 GND))
+    (pad 1 smd rect (at -3.975 2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 220 /SW_M))
+    (pad 1 smd rect (at 3.975 2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 220 /SW_M))
+    (pad 2 smd rect (at 3.975 -2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 1 GND))
+  )
+
+  (module Buttons_Switches_SMD:SW_SPST_PTS645 (layer B.Cu) (tedit 54EA6920) (tstamp 56816BBD)
+    (at 160.439 171.668 180)
+    (descr "C&K Components SPST SMD PTS645 Series 6mm Tact Switch")
+    (tags "SPST Button Switch")
+    (path /56835BD3)
+    (fp_text reference SW5 (at 0 0.8 180) (layer B.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value SW_PUSH (at 0.05 -0.8 180) (layer B.Fab)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_circle (center 0 0) (end 1.75 0.05) (layer B.SilkS) (width 0.15))
+    (fp_line (start 5.05 -3.4) (end 5.05 3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -5.05 3.4) (end -5.05 -3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -5.05 -3.4) (end 5.05 -3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -5.05 3.4) (end 5.05 3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start 3.225 3.225) (end 3.225 3.1) (layer B.SilkS) (width 0.15))
+    (fp_line (start 3.225 -3.225) (end 3.225 -3.1) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.225) (end -3.225 -3.1) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.1) (end -3.225 3.225) (layer B.SilkS) (width 0.15))
+    (fp_line (start 3.225 1.4) (end 3.225 -1.4) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.225) (end 3.225 3.225) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 1.4) (end -3.225 -1.4) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.225) (end 3.225 -3.225) (layer B.SilkS) (width 0.15))
+    (pad 2 smd rect (at -3.975 -2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 1 GND))
+    (pad 1 smd rect (at -3.975 2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 219 /SW_H))
+    (pad 1 smd rect (at 3.975 2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 219 /SW_H))
+    (pad 2 smd rect (at 3.975 -2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 1 GND))
+  )
+
+  (module Buttons_Switches_SMD:SW_SPST_PTS645 (layer B.Cu) (tedit 54EA6920) (tstamp 56816BD2)
+    (at 160.439 164.048 180)
+    (descr "C&K Components SPST SMD PTS645 Series 6mm Tact Switch")
+    (tags "SPST Button Switch")
+    (path /56835995)
+    (fp_text reference SW6 (at 0 0.8 180) (layer B.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value SW_PUSH (at 0.05 -0.8 180) (layer B.Fab)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_circle (center 0 0) (end 1.75 0.05) (layer B.SilkS) (width 0.15))
+    (fp_line (start 5.05 -3.4) (end 5.05 3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -5.05 3.4) (end -5.05 -3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -5.05 -3.4) (end 5.05 -3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -5.05 3.4) (end 5.05 3.4) (layer B.CrtYd) (width 0.05))
+    (fp_line (start 3.225 3.225) (end 3.225 3.1) (layer B.SilkS) (width 0.15))
+    (fp_line (start 3.225 -3.225) (end 3.225 -3.1) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.225) (end -3.225 -3.1) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.1) (end -3.225 3.225) (layer B.SilkS) (width 0.15))
+    (fp_line (start 3.225 1.4) (end 3.225 -1.4) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 3.225) (end 3.225 3.225) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 1.4) (end -3.225 -1.4) (layer B.SilkS) (width 0.15))
+    (fp_line (start -3.225 -3.225) (end 3.225 -3.225) (layer B.SilkS) (width 0.15))
+    (pad 2 smd rect (at -3.975 -2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 1 GND))
+    (pad 1 smd rect (at -3.975 2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 218 /SW_MODE))
+    (pad 1 smd rect (at 3.975 2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 218 /SW_MODE))
+    (pad 2 smd rect (at 3.975 -2.25 180) (size 1.55 1.3) (layers B.Cu B.Paste B.Mask)
+      (net 1 GND))
+  )
+
+  (gr_text MINU (at 170.942 179.832) (layer B.SilkS)
+    (effects (font (size 4 3) (thickness 0.3)) (justify mirror))
+  )
+  (gr_text HOUR (at 171.704 172.466) (layer B.SilkS)
+    (effects (font (size 4 3) (thickness 0.3)) (justify mirror))
+  )
+  (gr_text MODE (at 171.577 165.1) (layer B.SilkS)
+    (effects (font (size 4 3) (thickness 0.3)) (justify mirror))
+  )
+  (gr_text MINU (at 170.942 179.832) (layer F.SilkS)
+    (effects (font (size 4 3) (thickness 0.3)))
+  )
+  (gr_text HOUR (at 171.577 172.466) (layer F.SilkS)
+    (effects (font (size 4 3) (thickness 0.3)))
+  )
+  (gr_text MODE (at 171.45 165.1) (layer F.SilkS)
+    (effects (font (size 4 3) (thickness 0.3)))
+  )
   (target plus (at 30.48 271.78) (size 5) (width 0.2) (layer Edge.Cuts))
   (gr_circle (center 156.21 147.32) (end 31.75 149.86) (layer Edge.Cuts) (width 0.2))
 
@@ -6107,22 +6427,37 @@
   (segment (start 194.438 80.899) (end 193.188 80.899) (width 0.25) (layer F.Cu) (net 155))
   (segment (start 193.188 80.899) (end 192.08199 82.00501) (width 0.25) (layer F.Cu) (net 155))
   (segment (start 192.08199 82.00501) (end 192.08199 96.06999) (width 0.25) (layer F.Cu) (net 155))
-  (segment (start 131.286 168.906) (end 128.327 168.906) (width 0.25) (layer F.Cu) (net 214))
-  (segment (start 128.327 168.906) (end 128.204 168.783) (width 0.25) (layer F.Cu) (net 214) (tstamp 567DDFA7))
-  (segment (start 175.514 134.236) (end 173.546 134.236) (width 0.25) (layer F.Cu) (net 215))
-  (segment (start 173.546 134.236) (end 173.228 134.554) (width 0.25) (layer F.Cu) (net 215) (tstamp 567F34EA))
-  (segment (start 178.394 135.296) (end 176.574 135.296) (width 0.25) (layer F.Cu) (net 215))
-  (segment (start 176.574 135.296) (end 175.514 134.236) (width 0.25) (layer F.Cu) (net 215) (tstamp 567F34E2))
-  (segment (start 175.514 137.036) (end 173.546 137.036) (width 0.25) (layer F.Cu) (net 216))
-  (segment (start 173.546 137.036) (end 173.228 136.718) (width 0.25) (layer F.Cu) (net 216) (tstamp 567F34ED))
-  (segment (start 178.394 135.946) (end 176.604 135.946) (width 0.25) (layer F.Cu) (net 216))
-  (segment (start 176.604 135.946) (end 175.514 137.036) (width 0.25) (layer F.Cu) (net 216) (tstamp 567F34E6))
-  (segment (start 182.794 135.946) (end 184.686 135.946) (width 0.25) (layer F.Cu) (net 217))
-  (segment (start 184.686 135.946) (end 185.293 135.339) (width 0.25) (layer F.Cu) (net 217) (tstamp 567F3490))
-  (segment (start 182.794 136.596) (end 185.814 136.596) (width 0.25) (layer F.Cu) (net 218))
-  (segment (start 185.814 136.596) (end 187.198 135.212) (width 0.25) (layer F.Cu) (net 218) (tstamp 567F34D3))
-  (segment (start 182.794 137.246) (end 186.942 137.246) (width 0.25) (layer F.Cu) (net 219))
-  (segment (start 186.942 137.246) (end 188.976 135.212) (width 0.25) (layer F.Cu) (net 219) (tstamp 567F34D7))
+  (segment (start 131.286 168.906) (end 128.327 168.906) (width 0.25) (layer F.Cu) (net 211))
+  (segment (start 128.327 168.906) (end 128.204 168.783) (width 0.25) (layer F.Cu) (net 211) (tstamp 567DDFA7))
+  (segment (start 175.514 134.236) (end 173.546 134.236) (width 0.25) (layer F.Cu) (net 212))
+  (segment (start 173.546 134.236) (end 173.228 134.554) (width 0.25) (layer F.Cu) (net 212) (tstamp 567F34EA))
+  (segment (start 178.394 135.296) (end 176.574 135.296) (width 0.25) (layer F.Cu) (net 212))
+  (segment (start 176.574 135.296) (end 175.514 134.236) (width 0.25) (layer F.Cu) (net 212) (tstamp 567F34E2))
+  (segment (start 175.514 137.036) (end 173.546 137.036) (width 0.25) (layer F.Cu) (net 213))
+  (segment (start 173.546 137.036) (end 173.228 136.718) (width 0.25) (layer F.Cu) (net 213) (tstamp 567F34ED))
+  (segment (start 178.394 135.946) (end 176.604 135.946) (width 0.25) (layer F.Cu) (net 213))
+  (segment (start 176.604 135.946) (end 175.514 137.036) (width 0.25) (layer F.Cu) (net 213) (tstamp 567F34E6))
+  (segment (start 182.794 135.946) (end 184.686 135.946) (width 0.25) (layer F.Cu) (net 214))
+  (segment (start 184.686 135.946) (end 185.293 135.339) (width 0.25) (layer F.Cu) (net 214) (tstamp 567F3490))
+  (segment (start 182.794 136.596) (end 185.814 136.596) (width 0.25) (layer F.Cu) (net 215))
+  (segment (start 185.814 136.596) (end 187.198 135.212) (width 0.25) (layer F.Cu) (net 215) (tstamp 567F34D3))
+  (segment (start 182.794 137.246) (end 186.942 137.246) (width 0.25) (layer F.Cu) (net 216))
+  (segment (start 186.942 137.246) (end 188.976 135.212) (width 0.25) (layer F.Cu) (net 216) (tstamp 567F34D7))
+  (segment (start 156.464 161.798) (end 156.464 163.576) (width 0.25) (layer F.Cu) (net 218))
+  (segment (start 156.464 163.576) (end 156.21 163.83) (width 0.25) (layer F.Cu) (net 218))
+  (via (at 156.21 163.83) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 218))
+  (segment (start 156.464 163.576) (end 156.21 163.83) (width 0.25) (layer B.Cu) (net 218))
+  (segment (start 156.464 161.798) (end 156.464 163.576) (width 0.25) (layer B.Cu) (net 218))
+  (segment (start 156.464 169.418) (end 156.464 171.196) (width 0.25) (layer F.Cu) (net 219))
+  (segment (start 156.464 171.196) (end 156.21 171.45) (width 0.25) (layer F.Cu) (net 219))
+  (via (at 156.21 171.45) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 219))
+  (segment (start 156.464 171.196) (end 156.21 171.45) (width 0.25) (layer B.Cu) (net 219))
+  (segment (start 156.464 169.418) (end 156.464 171.196) (width 0.25) (layer B.Cu) (net 219))
+  (segment (start 156.464 177.038) (end 156.464 178.816) (width 0.25) (layer B.Cu) (net 220))
+  (segment (start 156.464 178.816) (end 156.21 179.07) (width 0.25) (layer B.Cu) (net 220))
+  (via (at 156.21 179.07) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 220))
+  (segment (start 156.464 178.816) (end 156.21 179.07) (width 0.25) (layer F.Cu) (net 220))
+  (segment (start 156.464 177.038) (end 156.464 178.816) (width 0.25) (layer F.Cu) (net 220))
 
   (zone (net 5) (net_name +5V) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
